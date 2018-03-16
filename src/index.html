@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>NoobCalc</title>
+        <link href="style.css" rel="stylesheet">
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <!-- <script src="rates.js"></script> -->
+        <!-- НАЧАЛO СКРИПТ ИСТОЧНИК ВАЛЮТНОГО КУРСА v2.0 -->
+        <!-- <script type="text/javascript" language="javascript" src="//cdn1.kursvaliut.ru/custom_widgets/get_widget.php?lw=230&rw=1&font=Trebuchet%20MS&cft=00b0ea&ctt=ffffff&ttb=0&cc=f2f2f2&cfb=ffffff&ct=000000&pd=4&pc=4&aiv=1&val[]=14&val[]=7&mf=14&avc=1&ac=1&aod=0"></script> -->
+        <!-- <noscript><a href="//www.kursvaliut.ru" title="курс валют">kursvaliut.ru</a></noscript> -->
+        <!-- <span style="font-family:arial;font-size:10px;color:#a2a2a2">&nbsp; Источник курса: <a href="//www.kursvaliut.ru" title="курс валют" style="font-size:10px;color:#a2a2a2;text-decoration:underline">kursvaliut.ru</a></span> -->
+        <!-- КОНЕЦ СКРИПТ ИСТОЧНИК ВАЛЮТНОГО КУРСА v2.0-->
+    </head>
+	
+    <body>
+        <div class="calculator">
+            <form class="calculator__form">
+
+                <div class="calculator__row">
+                    <input class="calculator__display" id="display" type="text" disabled />
+                </div>
+
+                <div class="calculator__row">
+                    <button type="button" value="C" class="calculator__key calculator__clear"></button>
+                    <button type="button" value="<--" class="calculator__key calculator__backspace"></button>
+                    <button type="button" value="und" class="calculator__key calculator__undo"></button>
+                    <button type="button" value="+" class="calculator__key calculator__button"></button>
+                </div>
+
+                <div class="calculator__row">
+                    <button type="button" value="9" class="calculator__key calculator__button"></button>
+                    <button type="button" value="8" class="calculator__key calculator__button"></button>
+                    <button type="button" value="7" class="calculator__key calculator__button"></button>
+                    <button type="button" value="-" class="calculator__key calculator__button"></button>
+                </div>
+
+                <div class="calculator__row">
+                    <button type="button" value="6" class="calculator__key calculator__button"></button>
+                    <button type="button" value="5" class="calculator__key calculator__button"></button>
+                    <button type="button" value="4" class="calculator__key calculator__button"></button>
+                    <button type="button" value="*" class="calculator__key calculator__button"></button>
+                </div>
+
+                <div class="calculator__row">
+                    <button type="button" value="3" class="calculator__key calculator__button"></button>
+                    <button type="button" value="2" class="calculator__key calculator__button"></button>
+                    <button type="button" value="1" class="calculator__key calculator__button"></button>
+                    <button type="button" value="/" class="calculator__key calculator__button"></button>
+                </div>
+
+                <div class="calculator__row">
+                    <button type="button" value="0" class="calculator__key calculator__button"></button>
+                    <button type="button" value="." class="calculator__key calculator__button"></button>
+                    <button type="button" value="=" class="calculator__key calculator__key--equal"></button>
+                </div>
+            </form>
+        </div>
+<!-- future rates layout -->
+        <!-- <form>
+            <label>Выберите исходную валюту:</label>
+            <select name="from" id="from">
+                <option value="USD" selected="selected">Доллар США</option>
+                <option value="EUR">Евро</option>
+                <option value="RUB">Рубль</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Введите сумму: </label>
+            <input name="cash" id="cash" class="is" type="text"/>
+            <br/>
+            <br/>
+            <label>Выберите расчетную валюту: </label>
+            <select name="to" id="to">
+                <option value="USD">Доллар США</option>
+                <option value="EUR" selected="selected">Евро</option>
+                <option value="RUB">Рубль</option>
+            </select>
+            <br/>
+            <br/>
+            <input type=button value="Вычислить" id="calculate">
+            <br/>
+            <br/>
+            <label><span id="result" class="result"></span></label>
+        </form> -->
+
+        <script src="pure_js.js"></script>
+    </body>
+
+</html>
